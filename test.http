@@ -1,0 +1,26 @@
+### Criar livro
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "titulo": "Dom Casmurro",
+  "autor": "Machado de Assis",
+  "ano": "1899-01-01",
+  "editora": "Editora X",
+  "isbn": "123456"
+}
+
+###
+
+### Listar livros
+GET http://localhost:3000/livros
+
+###
+
+### Buscar livro
+GET http://localhost:3000/livros/buscar?q=Machado
+
+###
+
+### Deletar livro
+DELETE http://localhost:3000/livros/1
